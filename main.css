@@ -1,0 +1,313 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.ribbon {
+  background-color:#0047AB;
+  width:100vw;
+  display:flex;
+  justify-content: center;
+  text-align:center;
+}
+
+.ribbon-content{
+  align-items: center;
+  padding: 60px 20px;
+  text-align:center;
+  gap: 3rem;
+}
+.ribbon-logos{
+  display:flex;
+  gap:40px;
+  justify-content: center;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+.ribbon-text {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  white-space: nowrap;
+  margin-bottom:30px;
+  color: whitesmoke;
+  display:block;
+  text-align:left;
+}
+.ribbon-logos img{
+  height:200px;
+  width:auto;
+  opacity:0.7;
+  align-items:center;
+  gap:20px;
+}
+.ribbon-content h1{
+  font-size: 5rem;
+  font-family: 'Playfair Display', serif;
+  text-align:left;
+  margin-bottom: 20px;
+  color:whitesmoke;
+  white-space: nowrap;
+
+}
+.clips{
+  background-color:ivory;
+
+}
+.clips-section {
+  max-width:1200px;
+  margin:80px auto;
+  padding 0 20 px;
+  background-color: ivory;
+}
+
+.clips-heading {
+  font-family:'Playfair Display',serif;
+  font-size: 5rem;
+  text-align:center;
+  color:black;
+  margin-bottom:30px;
+  margin-top:0px;
+  padding-top:30px;
+}
+
+.clip {
+  background-color:#FFF1D6;;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;  /* stack vertically */
+  align-items: center;     /* center horizontally */
+  text-align: center;      /* center text inside */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.clip-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;      /* 🔑 keeps all images same shape */
+  overflow: hidden;         /* crops overflow */
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.clip-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* 🔑 fills frame, crops if needed */
+  object-position: center;  /* center the crop */
+  display: block;
+  border-radius: 5px;
+  margin-bottom:20px;
+}
+
+.clip img{
+  max-width: 100%;
+  height:auto;
+  border-radius: 5px;
+  margin-bottom:20px;
+}
+
+.clip div{
+  padding: 0;
+  margin: 0;
+  gap:10px;
+  align-items: center;
+  text-align:center;
+  display: flex;
+  font-family: Roboto;
+  flex-direction:column;
+  border-radius: 10px;  
+}
+.clips-container {
+  gap:20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border:2px;
+  border-color:red;
+  background-color: ivory;
+}
+
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+ribbon img {
+  max-width: 50px;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.hero {
+  /* Replace with your picture */
+  background-image: url('self portrait.jpg'); 
+  background-size: cover;
+  background-position: left;
+
+  height: 100vh; /* full viewport height */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  padding-left: 50px;
+  color: white;
+  position: relative;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-justify: left;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+/* Headline */
+.hero h1 {
+  font-size: 10rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+a {
+  color: black;       /* make links black */
+  text-decoration: none; /* optional: remove underline */
+}
+
+/* Paragraph */
+.hero p {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 30px;
+}
+
+
+.hero img {
+  object-fit: contain; /* ✅ shows the whole image */
+  object-position: center;
+  background-color: #000; /* optional for letterboxing effect */
+}
+
+
+.jumbotron {
+  align-items: center;
+  background-image: url('self portrait.jpg');
+  background-size: cover;
+  color: #ffffff;
+  background-height: 1000rem;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #fbd1d5;
+  text-shadow: none;
+  background-color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+}
+
+.btn-secondary {
+  background-color: #E8DFE0;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 900px) {
+  .clips-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .clip {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .clip img {
+    max-width: 120px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .clip-text {
+    flex: 1;
+  }
+  .ribbon-logos {
+    flex-direction: column; /* stack logos */
+    gap: 20px;
+  }
+
+  .ribbon-logos img {
+    max-height: 32px;
+  }
+}
